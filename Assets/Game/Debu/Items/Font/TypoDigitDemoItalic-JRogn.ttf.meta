@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8fc3f45197681e445a962ab35186738e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Typo Digit Demo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f3468fb5fe33716438d1bb7ad1c6c0bd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
