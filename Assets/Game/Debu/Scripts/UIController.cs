@@ -4,41 +4,57 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] private PlayerController playerController;
+    public static UIController Instance;
+
+    [Header("Slider")]
     [SerializeField] private Slider heatSlide;
+
+    [Header("Heat")]
     [SerializeField] private Image heatFill;
-    [SerializeField] private Color[] colors;
-    [SerializeField] private Color overheatColor;
+    [SerializeField] private Color[] colors; // Color gradient for heat levels
+    [SerializeField] private Color overheatColor; // Color for overheat state
+
+    [Header("Gun State")]
     [SerializeField] private TMP_Text gunState;
+    [SerializeField] private string gunName;
 
+    [Header("Death")]
+    [SerializeField] private TMP_Text dieMessage;
+    [SerializeField] private GameObject diePanel;
 
-    private float maxHeat;
-    private float heatTime;
-    private bool isOverheated;
+    [Header("Respawn")]
+    [SerializeField] private TMP_Text respawnText;
+
+    [Header("Health")]
+    [SerializeField] private Slider healthSlider;
+    [SerializeField] private TMP_Text healthText;
+
+    public float maxHeat;
+    public float heatTime;
+    public bool isOverheated;
     private Color lerpedColor;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
-        maxHeat = playerController.GetMaxHeat();
         heatTime = 0;
         isOverheated = false;
     }
 
-    private void Update()
-    {
-        // Update the heat UI every frame
-        UpdateHeatUI(playerController.GetHeatTime());
-    }
-
+    // Update the heat UI based on the heat value
     public void UpdateHeatUI(float heatValue)
     {
-        isOverheated = playerController.IsOverheated();
         heatSlide.value = 1 - (heatValue / maxHeat);
         heatTime = heatValue;
 
         if (!isOverheated)
         {
-            gunState.text = playerController.GetGunName();
+            gunState.text = gunName;
+
             int index = Mathf.Clamp(Mathf.FloorToInt((heatTime / maxHeat) * (colors.Length - 1)), 0, colors.Length - 1);
 
             // Calculate the t value for lerping between colors
@@ -55,4 +71,40 @@ public class UIController : MonoBehaviour
         }
     }
 
+    //Set the gun name
+    public void SetGunName(string name)
+    {
+        gunName = name;
+    }
+
+    // Set the message shown when the player dies
+    public void SetDieMessage(string message)
+    {
+        dieMessage.text = message;
+    }
+
+    // Set the text for respawn information
+    public void SetRespawnText(string text)
+    {
+        respawnText.text = text;
+    }
+
+    // Show the death panel
+    public void ShowDiePanel()
+    {
+        diePanel.SetActive(true);
+    }
+
+    // Hide the death panel
+    public void HideDiePanel()
+    {
+        diePanel.SetActive(false);
+    }
+
+    // Update the health UI based on the health value
+    public void UpdateHealthUI(float healthValue)
+    {
+        healthSlider.value = healthValue;
+        healthText.text = healthValue.ToString() + ":HP";
+    }
 }

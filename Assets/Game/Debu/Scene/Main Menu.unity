@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8713fcf73858b6f4da0019c3b0a51ce3, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -3878,6 +3878,7 @@ MonoBehaviour:
   roomPanel: {fileID: 1087951029}
   warningPanel: {fileID: 1030016860}
   findRoomPanel: {fileID: 1093387773}
+  updatePanel: {fileID: 0}
   playerNameInput: {fileID: 1483435260}
   roomNameInput: {fileID: 642552854}
   loadingText: {fileID: 295297234}
@@ -3888,6 +3889,7 @@ MonoBehaviour:
   theroomButton: {fileID: 2240809460560150116}
   theplayerInfo: {fileID: 3437057246257752601}
   gameSceneName: Game
+  gameVersion: 1.0.0
 --- !u!1 &1187927843
 GameObject:
   m_ObjectHideFlags: 0

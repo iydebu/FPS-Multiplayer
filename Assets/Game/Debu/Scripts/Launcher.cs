@@ -36,6 +36,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField] private RoomButtons theroomButton;
     [SerializeField] private PlayerInfo theplayerInfo;
     [SerializeField] private string gameSceneName;
+    [SerializeField] private string gameVersion;
 
     // Local Variables
     private List<RoomButtons> roombuttonlist = new List<RoomButtons>();
@@ -251,7 +252,6 @@ quickJoinButton.gameObject.SetActive(false);
 
     public void QuickJoin()
     {
-        PhotonNetwork.LocalPlayer.NickName = "Player" + Random.Range(1000, 9999);
         PhotonNetwork.ConnectUsingSettings();
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 8;

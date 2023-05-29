@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviourPunCallbacks
 {
     [Header("Components")]
     [SerializeField] private Transform viewPoint;
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheckPoint;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private GameObject bulletImpact;
+    [SerializeField] private GameObject bloodEffect;
 
     [Header("Movements")]
     public float mouseSensitivity = 100f;
@@ -31,6 +33,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float overheatCoolRate = 5f;
     [SerializeField] private Guns[] guns;
 
+    [Header("Player Info")]
+    [SerializeField] private int maxHealth = 100;
+
+
+
     // Local Variables
     private float verticalRotation;
     private Vector3 moveDirection, movement;
@@ -41,6 +48,7 @@ public class PlayerController : MonoBehaviour
     private bool isOverheated;
     private int currentGunIndex;
     private float muzzleFlashTime;
+    private int currentHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -54,36 +62,48 @@ public class PlayerController : MonoBehaviour
         firingTime = firingRate;
         heatTime = 0;
         isOverheated = false;
-        currentGunIndex = 0;
+        currentGunIndex = 1;
         SwitchGuns();
+        currentHealth = maxHealth;
+        UIController.Instance.UpdateHealthUI(currentHealth);
+
+        //UI
+        UIController.Instance.maxHeat = maxHeat;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Look around
-        HandleLookAround();
+        if (photonView.IsMine)
+        {
+            //Update UI
+            UIController.Instance.UpdateHeatUI(heatTime);
 
-        // Movement
-        HandleMovement();
+            // Look around
+            HandleLookAround();
 
-        // Jump
-        HandleJump();
+            // Movement
+            HandleMovement();
 
-        // Apply gravity
-        ApplyGravity();
+            // Jump
+            HandleJump();
 
-        // Move the character controller
-        MoveCharacterController();
+            // Apply gravity
+            ApplyGravity();
 
-        // Lock and unlock cursor
-        HandleCursorLock();
+            // Move the character controller
+            MoveCharacterController();
 
-        // Shooting
-        HandleShooting();
+            // Lock and unlock cursor
+            HandleCursorLock();
 
-        // Switching guns
-        HandleSwitchingGuns();
+            // Shooting
+            HandleShooting();
+
+            // Switching guns
+            HandleSwitchingGuns();
+        }
     }
 
     // Function to handle switching guns
@@ -149,6 +169,7 @@ public class PlayerController : MonoBehaviour
             {
                 heatTime = maxHeat;
                 isOverheated = true;
+                UIController.Instance.isOverheated = true;
             }
         }
         else
@@ -158,6 +179,7 @@ public class PlayerController : MonoBehaviour
             {
                 heatTime = 0;
                 isOverheated = false;
+                UIController.Instance.isOverheated = false;
             }
         }
     }
@@ -240,18 +262,46 @@ public class PlayerController : MonoBehaviour
         Ray ray = Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            Debug.Log(hit.transform.name);
-            if(!(hit.collider.gameObject.tag == "invisible"))
+            if(hit.collider.gameObject.tag == "Player")
+            {
+                Debug.Log("Working");
+                Debug.Log("Hit: " + hit.collider.gameObject.GetPhotonView().Owner.NickName);
+                PhotonNetwork.Instantiate(bloodEffect.name, hit.point, Quaternion.identity);
+
+                hit.collider.gameObject.GetPhotonView().RPC("DealDamage", RpcTarget.All, photonView.Owner.NickName, guns[currentGunIndex].damage);
+            }
+            else if (!(hit.collider.gameObject.tag == "invisible"))
             {
                 GameObject impact = Instantiate(bulletImpact, hit.point + (hit.normal * 0.002f), Quaternion.LookRotation(hit.normal));
                 Destroy(impact, 5f);
             }
-           
+
         }
         guns[currentGunIndex].muzzleFlash.SetActive(true);
         muzzleFlashTime = muzzleFlashDuration;
         firingTime = firingRate;
         heatTime += heatPerShot;
+    }
+
+    [PunRPC]
+    public void DealDamage(string damager, int damageAmount)
+    {
+        TakeDamage(damager,damageAmount);
+    }
+
+    public void TakeDamage(string damager, int damageAmount)
+    {
+        //Debug.Log(photonView.Owner.NickName + "has been killed by " + damager);
+        if (photonView.IsMine)
+        {
+            currentHealth -= damageAmount;
+            if (currentHealth <= 0)
+            {
+                currentHealth = 0;
+                PlayerSpawner.Instance.Die(damager);
+            }
+            UIController.Instance.UpdateHealthUI(currentHealth);
+        }
     }
 
     void SwitchGuns()
@@ -265,12 +315,16 @@ public class PlayerController : MonoBehaviour
         firingRate = guns[currentGunIndex].firingRate;
         heatPerShot = guns[currentGunIndex].heatPerShot;
         gunName = guns[currentGunIndex].gunName;
+        UIController.Instance.SetGunName(gunName);
     }
 
     private void LateUpdate()
     {
-        Camera.transform.position = viewPoint.position;
-        Camera.transform.rotation = viewPoint.rotation;
+        if (photonView.IsMine)
+        {
+            Camera.transform.position = viewPoint.position;
+            Camera.transform.rotation = viewPoint.rotation;
+        }
     }
     public float GetMaxHeat()
     {
@@ -287,8 +341,4 @@ public class PlayerController : MonoBehaviour
         return isOverheated;
     }
 
-    public string GetGunName()
-    {
-        return gunName;
-    }
 }

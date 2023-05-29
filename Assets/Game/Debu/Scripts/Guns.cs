@@ -8,5 +8,6 @@ public class Guns : MonoBehaviour
     public float firingRate;
     public float heatPerShot;
     public string gunName;
+    public int damage;
     public GameObject muzzleFlash;
 }
