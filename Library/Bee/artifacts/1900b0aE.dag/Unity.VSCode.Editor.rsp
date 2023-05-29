@@ -111,9 +111,21 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:PHOTON_UNITY_NETWORKING
+-define:PUN_2_0_OR_NEWER
+-define:PUN_2_OR_NEWER
+-define:PUN_2_19_OR_NEWER
 -define:ROSLYN_ANALYZER_FIX
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/External Tools/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
+-r:"Assets/External Tools/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
+-r:"Assets/External Tools/Photon/PhotonUtilities/Compression/plugins/ByteConverter.dll"
+-r:"Assets/External Tools/Photon/PhotonUtilities/TransformCrusher/plugins/FloatCrusher.dll"
+-r:"Assets/External Tools/Photon/PhotonUtilities/TransformCrusher/plugins/HalFloat.dll"
+-r:"Assets/External Tools/Photon/PhotonUtilities/TransformCrusher/plugins/QuatCompress.dll"
+-r:"Assets/ToolsAndTests/TrafficRecording/libs/PacketDotNet.dll"
+-r:"Assets/ToolsAndTests/TrafficRecording/libs/SharpPcap.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"

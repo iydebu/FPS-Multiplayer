@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bff8d2a668702af4bb9eea11d32561fd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Typo Grotesk Black
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: bc1c2bcd8e3b79d41b6dea2ceb55f397, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

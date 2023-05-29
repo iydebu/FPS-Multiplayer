@@ -241,8 +241,12 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
             Debug.Log(hit.transform.name);
-            GameObject impact = Instantiate(bulletImpact, hit.point + (hit.normal * 0.002f), Quaternion.LookRotation(hit.normal));
-            Destroy(impact, 5f);
+            if(!(hit.collider.gameObject.tag == "invisible"))
+            {
+                GameObject impact = Instantiate(bulletImpact, hit.point + (hit.normal * 0.002f), Quaternion.LookRotation(hit.normal));
+                Destroy(impact, 5f);
+            }
+           
         }
         guns[currentGunIndex].muzzleFlash.SetActive(true);
         muzzleFlashTime = muzzleFlashDuration;
