@@ -3878,7 +3878,6 @@ MonoBehaviour:
   roomPanel: {fileID: 1087951029}
   warningPanel: {fileID: 1030016860}
   findRoomPanel: {fileID: 1093387773}
-  updatePanel: {fileID: 0}
   playerNameInput: {fileID: 1483435260}
   roomNameInput: {fileID: 642552854}
   loadingText: {fileID: 295297234}

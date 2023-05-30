@@ -28,6 +28,9 @@ public class UIController : MonoBehaviour
     [Header("Health")]
     [SerializeField] private Slider healthSlider;
     [SerializeField] private TMP_Text healthText;
+    [SerializeField] private float lerpSpeed = 5f;
+    private float currentHealth;
+    private float targetHealth;
 
     public float maxHeat;
     public float heatTime;
@@ -43,6 +46,7 @@ public class UIController : MonoBehaviour
     {
         heatTime = 0;
         isOverheated = false;
+        currentHealth = 0;
     }
 
     // Update the heat UI based on the heat value
@@ -102,9 +106,32 @@ public class UIController : MonoBehaviour
     }
 
     // Update the health UI based on the health value
+
+    // Update the health UI immediately
     public void UpdateHealthUI(float healthValue)
     {
-        healthSlider.value = healthValue;
-        healthText.text = healthValue.ToString() + ":HP";
+        targetHealth = healthValue;
+        healthText.text = Mathf.RoundToInt(targetHealth).ToString() + ":HP";
+
+        UpdateHealthBar();
+    }
+
+    // Update the health UI with lerping over time
+    public void LerpHealthUI(float healthValue)
+    {
+        targetHealth = healthValue;
+    }
+
+    private void Update()
+    {
+        // Lerping the health UI over time
+        currentHealth = Mathf.Lerp(currentHealth, targetHealth, lerpSpeed * Time.deltaTime);
+
+        UpdateHealthBar();
+    }
+
+    private void UpdateHealthBar()
+    {
+        healthSlider.value = currentHealth;
     }
 }

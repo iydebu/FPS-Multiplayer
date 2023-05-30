@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Voice.PUN;
+using UnityEngine.Profiling;
 
 public class PlayerController : MonoBehaviourPunCallbacks
 {
@@ -35,6 +37,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     [Header("Player Info")]
     [SerializeField] private int maxHealth = 100;
+    [SerializeField] private Animator anim;
+    [SerializeField] private GameObject playerModel;
+    [SerializeField] private Transform modelGunPoint, gunHolder;
 
 
 
@@ -53,6 +58,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+
         Cursor.lockState = CursorLockMode.Locked;
         activeSpeed = moveSpeed;
         Camera = Camera.main;
@@ -63,12 +69,23 @@ public class PlayerController : MonoBehaviourPunCallbacks
         heatTime = 0;
         isOverheated = false;
         currentGunIndex = 1;
+        photonView.RPC("SetGun",RpcTarget.All ,currentGunIndex);
         SwitchGuns();
         currentHealth = maxHealth;
-        UIController.Instance.UpdateHealthUI(currentHealth);
 
         //UI
-        UIController.Instance.maxHeat = maxHeat;
+        if (photonView.IsMine)
+        {
+            UIController.Instance.maxHeat = maxHeat;
+            UIController.Instance.UpdateHealthUI(currentHealth);
+            playerModel.SetActive(false);
+        }
+        else
+        {
+            gunHolder.parent = modelGunPoint;
+            gunHolder.localPosition = Vector3.zero;
+            gunHolder.localRotation = Quaternion.identity;
+        }
 
     }
 
@@ -103,7 +120,18 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
             // Switching guns
             HandleSwitchingGuns();
+
+            // Animation
+            HandleAnimation();
+
         }
+    }
+
+    // Function to handle animation
+    void HandleAnimation()
+    {
+        anim.SetFloat("speed", moveDirection.magnitude);
+        anim.SetBool("grounded", isGrounded);
     }
 
     // Function to handle switching guns
@@ -125,7 +153,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 currentGunIndex = guns.Length - 1;
             }
         }
-        SwitchGuns();
+        photonView.RPC("SetGun", RpcTarget.All, currentGunIndex);
     }
 
 
@@ -303,7 +331,15 @@ public class PlayerController : MonoBehaviourPunCallbacks
             UIController.Instance.UpdateHealthUI(currentHealth);
         }
     }
-
+    [PunRPC]
+    public void SetGun(int gunToSwitch)
+    {
+        if(gunToSwitch< guns.Length)
+        {
+            currentGunIndex = gunToSwitch;
+            SwitchGuns();
+        }
+    }
     void SwitchGuns()
     {
         foreach (Guns gun in guns)
@@ -315,7 +351,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
         firingRate = guns[currentGunIndex].firingRate;
         heatPerShot = guns[currentGunIndex].heatPerShot;
         gunName = guns[currentGunIndex].gunName;
-        UIController.Instance.SetGunName(gunName);
+        if (photonView.IsMine)
+        {
+            UIController.Instance.SetGunName(gunName);
+        }
     }
 
     private void LateUpdate()

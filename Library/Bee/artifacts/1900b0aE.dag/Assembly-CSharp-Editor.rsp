@@ -115,6 +115,7 @@
 -define:PUN_2_0_OR_NEWER
 -define:PUN_2_OR_NEWER
 -define:PUN_2_19_OR_NEWER
+-define:CROSS_PLATFORM_INPUT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/External Tools/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
@@ -354,6 +355,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/EmoCompressUtilsASMDEF.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/HalfFloatASMDEF.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/InterestManagement.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/MicAmplifierEditor.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/OnwershipTestsASMDEF.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PhotonChat.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PhotonRealtime.ref.dll"
@@ -363,6 +365,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Utilities.Culling.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Utilities.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonVoice.API.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonVoice.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonVoice.PUN.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonVoice.PUN.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonVoice.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PhotonVoice.Utilities.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PunDemos.DemoHubEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PunDemos.DemoSlotcarEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
@@ -399,6 +407,7 @@
 "Assets/External Tools/Photon/Simple/Components/Editor/SyncVitalsEditor.cs"
 "Assets/External Tools/Photon/Simple/Example/Assistants/Editor/TutorialAssists.cs"
 "Assets/External Tools/Photon/Simple/Utilities/GUITools/Editor/GUIColorBoxes.cs"
+"Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
 -langversion:9.0
 
 /deterministic
