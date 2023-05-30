@@ -19,7 +19,7 @@ MonoBehaviour:
     AppIdVoice: 122d8e03-2fae-41a4-9d68-f00d987b93e9
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: in
+    FixedRegion: 
     Server: 
     Port: 0
     ProxyServer: 
@@ -37,11 +37,11 @@ MonoBehaviour:
   - CantHearYou
   - ChangeColour
   - ClickRpc
-  - DestroyRpc
-  - HeresWhy
   - DealDamage
+  - DestroyRpc
   - DestroySpaceship
   - Fire
+  - HeresWhy
   - RespawnSpaceship
   - SetGun
   DisableAutoOpenWizard: 1

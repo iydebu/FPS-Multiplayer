@@ -4,7 +4,6 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Voice.PUN;
 using UnityEngine.Profiling;
-
 public class PlayerController : MonoBehaviourPunCallbacks
 {
     [Header("Components")]
@@ -40,6 +39,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     [SerializeField] private Animator anim;
     [SerializeField] private GameObject playerModel;
     [SerializeField] private Transform modelGunPoint, gunHolder;
+    [SerializeField] private PhotonVoiceView recorder;
 
 
 
@@ -54,14 +54,16 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private int currentGunIndex;
     private float muzzleFlashTime;
     private int currentHealth;
+    private bool isMute;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        // Intilization of components
         Cursor.lockState = CursorLockMode.Locked;
         activeSpeed = moveSpeed;
         Camera = Camera.main;
+        recorder = GetComponent<PhotonVoiceView>();
 
         // Intilization of variables
         muzzleFlashTime = muzzleFlashDuration;
@@ -72,6 +74,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         photonView.RPC("SetGun",RpcTarget.All ,currentGunIndex);
         SwitchGuns();
         currentHealth = maxHealth;
+        isMute = false;
 
         //UI
         if (photonView.IsMine)
@@ -124,6 +127,36 @@ public class PlayerController : MonoBehaviourPunCallbacks
             // Animation
             HandleAnimation();
 
+            //Voice
+            HandleVoice();
+
+        }
+    }
+
+    // Function to handle voice
+    void HandleVoice()
+    {
+        if((recorder != null) && (recorder.IsRecording))
+        {
+            UIController.Instance.SetVoiceText("Voice: ON");
+        }
+        else
+        {
+            UIController.Instance.SetVoiceText("Voice: OFF");
+        }
+
+        if ((recorder!=null) && Input.GetKeyDown(KeyCode.V) && !isMute)
+        {
+            recorder.RecorderInUse.TransmitEnabled = false;
+            isMute = true;
+            Debug.Log("Voice Disabled");
+        }
+
+        else if((recorder != null) && Input.GetKeyDown(KeyCode.V) && isMute)
+        {
+            recorder.RecorderInUse.TransmitEnabled = true;
+            isMute = false;
+            Debug.Log("Voice Enable");
         }
     }
 

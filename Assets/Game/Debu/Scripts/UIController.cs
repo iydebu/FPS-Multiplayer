@@ -29,6 +29,10 @@ public class UIController : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private TMP_Text healthText;
     [SerializeField] private float lerpSpeed = 5f;
+
+    [Header("Voice")]
+    [SerializeField] private TMP_Text voiceText;
+
     private float currentHealth;
     private float targetHealth;
 
@@ -133,5 +137,10 @@ public class UIController : MonoBehaviour
     private void UpdateHealthBar()
     {
         healthSlider.value = currentHealth;
+    }
+
+    public void SetVoiceText(string text)
+    {
+        voiceText.text = text;
     }
 }

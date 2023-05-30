@@ -1,456 +1,407 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1685450806176833, "dur": 601892, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1685450806177093, "dur": 2619, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1685450806179716, "dur": 584727, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1685450806764445, "dur": 14279, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1685450806779373, "dur": 14, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685473530941609, "dur": 562140, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685473530941870, "dur": 9472, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685473530951346, "dur": 538444, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685473531489791, "dur": 13956, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685473531504367, "dur": 10, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1685450806205478, "dur":1025, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806206514, "dur":190, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1685450806206757, "dur":24, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1685450806206781, "dur":349, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1685450806207151, "dur":767, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806207918, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806746985, "dur":91, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747076, "dur":23, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747099, "dur":126, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747225, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747234, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747237, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747244, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747247, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747253, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747255, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747261, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747263, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747269, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747271, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747279, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747281, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747287, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747297, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806747325, "dur":1516, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1685450806207336, "dur":621, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806207960, "dur":5213, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213187, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213191, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213252, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213255, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213295, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213347, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213380, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213415, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213442, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213562, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213613, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213653, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213686, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213727, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213761, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213795, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213831, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213865, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213899, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213960, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806213999, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214034, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214063, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214099, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214157, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214207, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214244, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214289, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214338, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214476, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214529, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214575, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214614, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214655, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214693, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214733, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806214771, "dur":150633, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806365405, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806365459, "dur":275687, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685450806641147, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685450806641202, "dur":105779, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806208014, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806208015, "dur":5200, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806213215, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1685450806213268, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806213304, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1685450806213356, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806213388, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":2, "ts":1685450806213423, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806213454, "dur":671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf.exe" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214126, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214175, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214232, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214277, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214324, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214472, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214520, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214561, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214604, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214645, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214702, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806214742, "dur":82661, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806297404, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806297474, "dur":7215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.pdb" }}
-,{ "pid":12345, "tid":2, "ts":1685450806304689, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806304754, "dur":217660, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806522415, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806522486, "dur":68195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/OnwershipTestsASMDEF.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806590682, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806590764, "dur":49756, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/HalfFloatASMDEF.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685450806640521, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685450806640678, "dur":106327, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806207496, "dur":479, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806207975, "dur":5497, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806213472, "dur":483, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/websocket-sharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806213955, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806213984, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214017, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214047, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214078, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214107, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214165, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214210, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214252, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214304, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214345, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214477, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214533, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214581, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214629, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214667, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214707, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806214745, "dur":9219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
-,{ "pid":12345, "tid":3, "ts":1685450806223965, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806224033, "dur":120675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806344708, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806344776, "dur":19788, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.API.pdb" }}
-,{ "pid":12345, "tid":3, "ts":1685450806364565, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806364640, "dur":8776, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
-,{ "pid":12345, "tid":3, "ts":1685450806373417, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806373479, "dur":328642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685450806702122, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685450806702198, "dur":44808, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806207634, "dur":377, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806208012, "dur":5171, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213187, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213254, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213288, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213324, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213354, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213389, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213417, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/WinPixEventRuntime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213559, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213604, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213641, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213680, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213725, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213759, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213796, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806213828, "dur":241611, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685450806455440, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806455506, "dur":19662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonChat.pdb" }}
-,{ "pid":12345, "tid":4, "ts":1685450806475169, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806475240, "dur":138640, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonChat.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685450806613881, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806613954, "dur":70590, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/BitpackersASMDEF.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685450806684545, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685450806684625, "dur":62355, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806207765, "dur":260, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806208025, "dur":5174, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213200, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213262, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213303, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213351, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213386, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213425, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213461, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213603, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213651, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213709, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213741, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213777, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213807, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213841, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213871, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213905, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213936, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806213970, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214006, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214040, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214071, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214105, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214161, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214207, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214250, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214300, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214342, "dur":511, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214853, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806214909, "dur":27727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.Core.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242636, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242694, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242740, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242783, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242824, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242860, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242897, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242930, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806242968, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243001, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243039, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243072, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243116, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243160, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243194, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243225, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243258, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243298, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806243333, "dur":1125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244470, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244534, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244573, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244612, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244646, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244682, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244713, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244749, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244783, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244825, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244860, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244899, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244931, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244965, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806244996, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245030, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245061, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245098, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245130, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/SharpPcap.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245179, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245210, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/QuatCompress.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245244, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245275, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/QuatCompress.dll.mdb" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245309, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245339, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/QuatCompress.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245373, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806245404, "dur":9912, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.PUN.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1685450806255317, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806255383, "dur":114346, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.PUN.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806369729, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806369797, "dur":8059, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1685450806377857, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806377926, "dur":11028, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.Demos.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1685450806388955, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806389023, "dur":273054, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.Demos.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685450806662078, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685450806662165, "dur":84817, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806207903, "dur":166, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806208069, "dur":5106, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213186, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213267, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213306, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213351, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213379, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213411, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213441, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213516, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213555, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213588, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213617, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213655, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213692, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213729, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213761, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213791, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806213820, "dur":11354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UI.pdb" }}
-,{ "pid":12345, "tid":6, "ts":1685450806225174, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806225227, "dur":8680, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.TextMeshPro.pdb" }}
-,{ "pid":12345, "tid":6, "ts":1685450806233907, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806233953, "dur":7541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.Polybrush.pdb" }}
-,{ "pid":12345, "tid":6, "ts":1685450806241495, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806241558, "dur":158084, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.Polybrush.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685450806399643, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806399708, "dur":11508, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonRealtime.pdb" }}
-,{ "pid":12345, "tid":6, "ts":1685450806411216, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806411288, "dur":255865, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonRealtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685450806667154, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685450806667242, "dur":79741, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806208073, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806208074, "dur":5139, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213214, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213282, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213316, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213357, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213389, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213427, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213495, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213537, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213568, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213608, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213646, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213685, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213731, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213768, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213799, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213833, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213866, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213900, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213929, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213961, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806213992, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214026, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214057, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214095, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214147, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214195, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214239, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214283, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214322, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214365, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214519, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214563, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214603, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214646, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806214702, "dur":7456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.State.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1685450806222159, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806222231, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806222278, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806222313, "dur":11074, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.Timeline.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1685450806233387, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806233455, "dur":380709, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806614165, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806614228, "dur":10333, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Assembly-CSharp.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1685450806624581, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806625480, "dur":3556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Assembly-CSharp.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629085, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/opus_egpv.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629143, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629177, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/webrtc-audio.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629212, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629243, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/AudioIn.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629277, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629306, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629340, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629374, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629406, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629439, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629472, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629518, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629550, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629581, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629614, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629654, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629687, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806629718, "dur":1223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":7, "ts":1685450806630942, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631026, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.resource" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631108, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631175, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631209, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631249, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.assets" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631282, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631321, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level1.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631355, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631388, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level1" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631502, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631534, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level0" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631571, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631602, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631639, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631671, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631703, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631764, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631805, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631847, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/boot.config" }}
-,{ "pid":12345, "tid":7, "ts":1685450806631975, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685450806632010, "dur":114996, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806208198, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806208198, "dur":5000, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213199, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213271, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213314, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213361, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213392, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213429, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213557, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213613, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213652, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213692, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213726, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213762, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213793, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213831, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213863, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213901, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213944, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806213979, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214007, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214040, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214071, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214104, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214161, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214211, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214249, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214300, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214342, "dur":560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214902, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806214961, "dur":144684, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806359646, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806359769, "dur":159479, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.API.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806519249, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806519318, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Photon3Unity3D.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806519362, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806519399, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Photon3Unity3D.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806519436, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806519470, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PacketDotNet.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806519507, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806519540, "dur":11614, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/OnwershipTestsASMDEF.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806531155, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806531225, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806531280, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806531319, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806531358, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806531392, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806531430, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806531462, "dur":7820, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/InterestManagement.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806539283, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806539352, "dur":44704, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/InterestManagement.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806584057, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806584144, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/HalFloat.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806584194, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806584232, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/HalFloat.dll.mdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806584270, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806584302, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/HalFloat.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806584341, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806584374, "dur":10776, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/HalfFloatASMDEF.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806595151, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806595223, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/FloatCrusher.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806595270, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806595304, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/FloatCrusher.dll.mdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806595341, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806595374, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/FloatCrusher.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806595410, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806595440, "dur":10293, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/EmoCompressUtilsASMDEF.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806605733, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806605858, "dur":2741, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/EmoCompressUtilsASMDEF.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806608599, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806608664, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/ByteConverter.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806608707, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806608741, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/ByteConverter.dll.mdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806608777, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806608807, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/ByteConverter.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806608842, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806608875, "dur":7041, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/BitpackersASMDEF.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1685450806615917, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806615978, "dur":129688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806745672, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685450806745691, "dur":1222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685450806746951, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":8, "ts":1685450806746953, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685450806750248, "dur":1812, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1685450806779482, "dur": 1101, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1685450806779360, "dur": 1277, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1685473530970200, "dur":1599, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473530971808, "dur":462, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1685473530972317, "dur":24, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1685473530972341, "dur":356, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1685473530972731, "dur":693, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473530973424, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458368, "dur":96, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458464, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458485, "dur":9, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458494, "dur":44, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458538, "dur":26, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458564, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458571, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458574, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458581, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458583, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458589, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458591, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458600, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458602, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458608, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458610, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458616, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458631, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531458666, "dur":9529, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1685473530972880, "dur":593, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473530973473, "dur":4628, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978101, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978185, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978215, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978264, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978296, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978339, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978406, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978451, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978487, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978528, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978561, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978597, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473530978629, "dur":223170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685473531201800, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473531201861, "dur":174326, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonChat.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685473531376188, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685473531376249, "dur":82101, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530973624, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530973625, "dur":4425, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978054, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978114, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978219, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978260, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978291, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978336, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978403, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978449, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978481, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978518, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978546, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978584, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978633, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978672, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978703, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978742, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978778, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978816, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978848, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978889, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978918, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978949, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530978981, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979013, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979049, "dur":320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979369, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979404, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979441, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979468, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979497, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979545, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979597, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979636, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979669, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979697, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979728, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979756, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979792, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979820, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979849, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979879, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979920, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979950, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530979986, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980016, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980048, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980074, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980104, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980130, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980159, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980184, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980214, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980241, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980274, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980301, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980332, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980358, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980388, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980416, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980445, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980474, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980505, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980531, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/SharpPcap.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980582, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980617, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/QuatCompress.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980654, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473530980690, "dur":90980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.PUN.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531071670, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531071731, "dur":135213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.API.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531206945, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531207020, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Photon3Unity3D.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531207069, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531207111, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PacketDotNet.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531207162, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531207204, "dur":64229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/OnwershipTestsASMDEF.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531271434, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531271501, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/HalFloat.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531271554, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531271605, "dur":41329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/HalfFloatASMDEF.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531312935, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531313001, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/opus_egpv.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531313058, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531313103, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/webrtc-audio.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531313149, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531313188, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/AudioIn.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685473531313239, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531313278, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1685473531313337, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531315091, "dur":3179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1685473531318315, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685473531318355, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531318365, "dur":1287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685473531319681, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685473531319734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531319744, "dur":1747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685473531321539, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685473531321601, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531321612, "dur":4983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685473531326641, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685473531326698, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531326711, "dur":4314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685473531331069, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.resource" }}
+,{ "pid":12345, "tid":2, "ts":1685473531331110, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531331121, "dur":1710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.resource" }}
+,{ "pid":12345, "tid":2, "ts":1685473531332869, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685473531332942, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531332953, "dur":6792, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1685473531339782, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685473531339839, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531339849, "dur":6485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685473531346385, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1685473531346431, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531346443, "dur":1898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1685473531348387, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1685473531348437, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531348449, "dur":868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1685473531349361, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685473531349414, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685473531349428, "dur":20905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685473531370374, "dur":88057, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530972976, "dur":545, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530973521, "dur":4581, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530978102, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1685473530978205, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530978241, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1685473530978283, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530978328, "dur":666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf.exe" }}
+,{ "pid":12345, "tid":3, "ts":1685473530978994, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530979030, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685473530979145, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530979181, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685473530979222, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530979258, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685473530979291, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473530979326, "dur":107235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685473531086562, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473531086631, "dur":242348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685473531328979, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473531329046, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1685473531329226, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473531329270, "dur":3178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1685473531332448, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473531332500, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1685473531332558, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685473531332584, "dur":36563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1685473531369190, "dur":89279, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530973131, "dur":437, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530973568, "dur":4535, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978103, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978190, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978224, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978276, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978309, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978352, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978391, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978436, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978620, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978651, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978681, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978720, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978749, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978805, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978839, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978877, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978912, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978950, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530978993, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530979026, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530979061, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473530979250, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473530979280, "dur":136571, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473531115851, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473531115908, "dur":264583, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.Demos.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685473531380492, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685473531380534, "dur":77820, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530973285, "dur":360, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530973645, "dur":4457, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978102, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978178, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978215, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978252, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978285, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978324, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978403, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978458, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978491, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978531, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978563, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978611, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978642, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978679, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978709, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978746, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978776, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978810, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978843, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978879, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978913, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978946, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530978980, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530979014, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530979046, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530979160, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530979204, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473530979245, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473530979275, "dur":86839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531066115, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531066170, "dur":191194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonVoice.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531257365, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531257442, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531257489, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531257526, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531257572, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531257621, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531257651, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531257677, "dur":36671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/InterestManagement.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531294348, "dur":1169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531295521, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/FloatCrusher.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531295580, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531295622, "dur":798, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/EmoCompressUtilsASMDEF.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531296420, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531296460, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/ByteConverter.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531296493, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531296543, "dur":79666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/BitpackersASMDEF.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685473531376209, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685473531376257, "dur":82068, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530973443, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530973443, "dur":4600, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978054, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978058, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978114, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978116, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978202, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978247, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978284, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978330, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978387, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/websocket-sharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978437, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978476, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978505, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978528, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978552, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978574, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978598, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978628, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978668, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978703, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978761, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978795, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978831, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978861, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978898, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978929, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978963, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530978996, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530979030, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530979145, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530979188, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530979223, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473530979256, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473530979285, "dur":116262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473531095548, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473531095627, "dur":298311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685473531393939, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685473531394031, "dur":64322, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530973772, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530973772, "dur":4328, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978100, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978208, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978244, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978281, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978317, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978358, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978393, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978439, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978475, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978513, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978546, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978584, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978616, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978649, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978682, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978718, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978749, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978786, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978822, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978860, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978893, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978930, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978962, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530978998, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530979027, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530979146, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530979181, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530979224, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530979255, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473530979285, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473530979326, "dur":331894, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473531311221, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473531311296, "dur":145817, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473531457120, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1685473531457183, "dur":1075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1685473531458301, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":7, "ts":1685473531458303, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530973923, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530973923, "dur":4175, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978099, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978175, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978210, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978243, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978274, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978310, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978343, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978403, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978450, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978492, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978527, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978566, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978600, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978638, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978671, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978710, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978742, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978776, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978808, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978842, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978876, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978914, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978945, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530978981, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530979012, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530979047, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530979197, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530979245, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530979290, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473530979326, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473530979356, "dur":154178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/Unity.Polybrush.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473531133535, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473531133643, "dur":217867, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Managed/PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1685473531351525, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473531351626, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":8, "ts":1685473531351715, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473531351748, "dur":4347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":8, "ts":1685473531356174, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1685473531356231, "dur":16, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473531356264, "dur":1454, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1685473531357775, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1685473531357957, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1685473531357999, "dur":100360, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685473531471338, "dur":1961, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1685473531504561, "dur": 549, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685473531504351, "dur": 776, "ph": "X", "name": "Write chrome-trace events", "args": {} },
