@@ -367,7 +367,7 @@
       "Annotation": "CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/AudioIn.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Assets/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/AudioIn.dll"
+        "Assets/External Tools/Photon Voice/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/AudioIn.dll"
       ],
       "Outputs": [
         "C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/AudioIn.dll"
@@ -378,7 +378,7 @@
       "Annotation": "CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/webrtc-audio.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Assets/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/webrtc-audio.dll"
+        "Assets/External Tools/Photon Voice/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/webrtc-audio.dll"
       ],
       "Outputs": [
         "C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/webrtc-audio.dll"
@@ -389,7 +389,7 @@
       "Annotation": "CopyFiles C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/opus_egpv.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Assets/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/opus_egpv.dll"
+        "Assets/External Tools/Photon Voice/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/opus_egpv.dll"
       ],
       "Outputs": [
         "C:/Users/debut/OneDrive/Documents/Unity Projects/Personal/Fps Online/FPS Multiplayer Build/Direwolf_Data/Plugins/x86_64/opus_egpv.dll"
@@ -2287,13 +2287,13 @@
   ],
   "StatSignatures": [
     {
-      "File": "Assets/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/AudioIn.dll"
+      "File": "Assets/External Tools/Photon Voice/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/AudioIn.dll"
     },
     {
-      "File": "Assets/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/opus_egpv.dll"
+      "File": "Assets/External Tools/Photon Voice/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/opus_egpv.dll"
     },
     {
-      "File": "Assets/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/webrtc-audio.dll"
+      "File": "Assets/External Tools/Photon Voice/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/webrtc-audio.dll"
     },
     {
       "File": "C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport"

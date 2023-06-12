@@ -52,7 +52,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         // Initialize panels
         CloseAllPanels();
-        loginPanel.SetActive(true);
+        Connect();
 
 #if !UNITY_EDITOR
 quickJoinButton.gameObject.SetActive(false);
@@ -73,7 +73,14 @@ quickJoinButton.gameObject.SetActive(false);
     {
         // Called when joined the lobby
         CloseAllPanels();
-        selectionPanel.SetActive(true);
+        if (PhotonNetwork.LocalPlayer.NickName.Length > 0)
+        {
+            selectionPanel.SetActive(true);
+        }
+        else
+        {
+            loginPanel.SetActive(true);
+        }
     }
 
     public override void OnJoinedRoom()
@@ -172,26 +179,28 @@ quickJoinButton.gameObject.SetActive(false);
         warningPanel.SetActive(false);
     }
 
+    private void Connect()
+    {
+        loginPanel.SetActive(false);
+        loadingPanel.SetActive(true);
+        loadingText.text = "Connecting to server...";
+        PhotonNetwork.ConnectUsingSettings();
+    }
+
     public void Login()
     {
         // Called when the login button is clicked
         if (playerNameInput.text.Length > 0)
         {
-            PhotonNetwork.LocalPlayer.NickName = playerNameInput.text;
-            loginPanel.SetActive(false);
-            loadingPanel.SetActive(true);
-            loadingText.text = "Connecting to server...";
-            PhotonNetwork.ConnectUsingSettings();
+            PhotonNetwork.LocalPlayer.NickName = playerNameInput.text;           
         }
         else
         {
             // Generate random name
             PhotonNetwork.LocalPlayer.NickName = "Player" + Random.Range(1000, 9999);
-            loginPanel.SetActive(false);
-            loadingPanel.SetActive(true);
-            loadingText.text = "Connecting to server...";
-            PhotonNetwork.ConnectUsingSettings();
         }
+        CloseAllPanels();
+        selectionPanel.SetActive(true);
     }
 
     public void Create_Room()

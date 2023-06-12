@@ -288,9 +288,9 @@
 -r:"Library/Bee/artifacts/2000b0aP.dag/PhotonVoice.API.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aP.dag/PhotonVoice.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.ref.dll"
-"Assets/Photon/PhotonVoice/Code/PUN/PhotonVoiceView.cs"
-"Assets/Photon/PhotonVoice/Code/PUN/PunVoiceClient.cs"
-"Assets/Photon/PhotonVoice/Code/PUN/UtilityScripts/VoiceDebugScript.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/PUN/PhotonVoiceView.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/PUN/PunVoiceClient.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/PUN/UtilityScripts/VoiceDebugScript.cs"
 -langversion:9.0
 
 /deterministic

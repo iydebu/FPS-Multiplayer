@@ -341,7 +341,7 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Photon/PhotonVoice/Code/PUN/Editor/PunVoiceClientEditor.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/PUN/Editor/PunVoiceClientEditor.cs"
 -langversion:9.0
 
 /deterministic

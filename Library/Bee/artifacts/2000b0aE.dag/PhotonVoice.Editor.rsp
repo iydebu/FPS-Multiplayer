@@ -339,11 +339,11 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Photon/PhotonVoice/Code/Editor/PhotonVoiceEditorUtils.cs"
-"Assets/Photon/PhotonVoice/Code/Editor/RecorderEditor.cs"
-"Assets/Photon/PhotonVoice/Code/Editor/SpeakerEditor.cs"
-"Assets/Photon/PhotonVoice/Code/Editor/UnityVoiceClientEditor.cs"
-"Assets/Photon/PhotonVoice/Code/Editor/WebRtcAudioDspEditor.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/Editor/PhotonVoiceEditorUtils.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/Editor/RecorderEditor.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/Editor/SpeakerEditor.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/Editor/UnityVoiceClientEditor.cs"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Code/Editor/WebRtcAudioDspEditor.cs"
 -langversion:9.0
 
 /deterministic

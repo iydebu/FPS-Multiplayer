@@ -1,8 +1,10 @@
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class UIController : MonoBehaviour
+public class UIController : MonoBehaviourPunCallbacks
 {
     public static UIController Instance;
 
@@ -33,6 +35,15 @@ public class UIController : MonoBehaviour
     [Header("Voice")]
     [SerializeField] private TMP_Text voiceText;
 
+    [Header("Panels")]
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject loadingPanel;
+
+    [Header("Other")]
+    [SerializeField] private TMP_Text loadingText;
+    [SerializeField] private TMP_InputField senstivity;
+
+
     private float currentHealth;
     private float targetHealth;
 
@@ -40,6 +51,7 @@ public class UIController : MonoBehaviour
     public float heatTime;
     public bool isOverheated;
     private Color lerpedColor;
+    private int senstivityValue;
 
     private void Awake()
     {
@@ -143,4 +155,40 @@ public class UIController : MonoBehaviour
     {
         voiceText.text = text;
     }
+
+    public void ShowPauseMenu()
+    {
+        pausePanel.SetActive(true);
+    }
+
+    public void LeaveRoom()
+    {
+        if (PhotonNetwork.InRoom)
+        {
+            loadingText.text = "Leaving Room...";
+            loadingPanel.SetActive(true);
+            PhotonNetwork.LeaveRoom();
+        }
+    }
+
+    public override void OnLeftRoom()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void HidePauseMenu()
+    {
+        pausePanel.SetActive(false);
+    }
+
+    public void SetSenstivity()
+    {
+       senstivityValue = int.Parse(senstivity.text);
+    }
+
+    public int GetSenstivity()
+    {
+        return senstivityValue;
+    }
+
 }

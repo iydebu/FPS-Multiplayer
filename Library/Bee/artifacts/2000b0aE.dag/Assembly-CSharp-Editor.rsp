@@ -383,13 +383,13 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/External Tools/Photon Voice/Photon/PhotonVoice/Demos/DemoVoicePun/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
 "Assets/External Tools/Photon/PhotonChat/Demos/DemoChat/Editor/ChatEditor.cs"
 "Assets/External Tools/Photon/Simple/Components/Editor/SyncAnimatorEditor.cs"
 "Assets/External Tools/Photon/Simple/Components/Editor/SyncTransformEditor.cs"
 "Assets/External Tools/Photon/Simple/Components/Editor/SyncVitalsEditor.cs"
 "Assets/External Tools/Photon/Simple/Example/Assistants/Editor/TutorialAssists.cs"
 "Assets/External Tools/Photon/Simple/Utilities/GUITools/Editor/GUIColorBoxes.cs"
-"Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
 -langversion:9.0
 
 /deterministic

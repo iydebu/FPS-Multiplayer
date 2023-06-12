@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private float muzzleFlashTime;
     private int currentHealth;
     private bool isMute;
+    private bool isPaused;
 
     // Start is called before the first frame update
     void Start()
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         SwitchGuns();
         currentHealth = maxHealth;
         isMute = false;
+        isPaused = false;
 
         //UI
         if (photonView.IsMine)
@@ -100,35 +102,45 @@ public class PlayerController : MonoBehaviourPunCallbacks
             //Update UI
             UIController.Instance.UpdateHeatUI(heatTime);
 
-            // Look around
-            HandleLookAround();
+            // Pause
+            if (!isPaused)
+            {
 
-            // Movement
-            HandleMovement();
+                // Look around
+                HandleLookAround();
 
-            // Jump
-            HandleJump();
+                // Movement
+                HandleMovement();
+
+                // Jump
+                HandleJump();
+
+                // Shooting
+                HandleShooting();
+
+                // Switching guns
+                HandleSwitchingGuns();
+
+                //Voice
+                HandleVoice();
+
+                // Move the character controller
+                MoveCharacterController();
+            }
+            else if(isPaused)
+            {
+                UpdateSensitivity();
+            }
 
             // Apply gravity
             ApplyGravity();
 
-            // Move the character controller
-            MoveCharacterController();
 
             // Lock and unlock cursor
             HandleCursorLock();
 
-            // Shooting
-            HandleShooting();
-
-            // Switching guns
-            HandleSwitchingGuns();
-
             // Animation
             HandleAnimation();
-
-            //Voice
-            HandleVoice();
 
         }
     }
@@ -305,18 +317,20 @@ public class PlayerController : MonoBehaviourPunCallbacks
     // Function to handle cursor lock and unlock
     void HandleCursorLock()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
             Cursor.lockState = CursorLockMode.None;
+            isPaused = true;
+            UIController.Instance.ShowPauseMenu();
         }
-        else if (Cursor.lockState == CursorLockMode.None)
+        else if(Input.GetKeyDown(KeyCode.Escape) && isPaused)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-            }
+            isPaused = false;
+            UIController.Instance.HidePauseMenu();
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
+
 
     void Shoot()
     {
@@ -372,6 +386,11 @@ public class PlayerController : MonoBehaviourPunCallbacks
             currentGunIndex = gunToSwitch;
             SwitchGuns();
         }
+    }
+
+    void UpdateSensitivity()
+    {
+        mouseSensitivity = UIController.Instance.GetSenstivity();
     }
     void SwitchGuns()
     {
