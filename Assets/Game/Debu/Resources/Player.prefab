@@ -245,6 +245,19 @@ MonoBehaviour:
   modelGunPoint: {fileID: 1063470580}
   gunHolder: {fileID: 323980936678857137}
   recorder: {fileID: 0}
+  speaker: {fileID: 0}
+  gunfires:
+  - {fileID: 8300000, guid: 5207b2a445fcb144281ab5395fe95c1d, type: 3}
+  - {fileID: 8300000, guid: 6c641842185384646b603322cc7e7559, type: 3}
+  - {fileID: 8300000, guid: 7e950513b9c6d734e8130770598861f3, type: 3}
+  reloads:
+  - {fileID: 8300000, guid: 2868e580baee45d449931dc35a5ace81, type: 3}
+  - {fileID: 8300000, guid: 1e01a3eff9609af4a91cea332a46838e, type: 3}
+  - {fileID: 8300000, guid: 6a32a0d49cd240b4cb9934adf37a49a5, type: 3}
+  gunChange: {fileID: 8300000, guid: 676e2edabf4844f479346ec6b0620429, type: 3}
+  pause: {fileID: 8300000, guid: 31efcb7bf67ef66498b68e3c9cde3d85, type: 3}
+  voice: {fileID: 8300000, guid: d89bdbf7976403741bca8818fbb093db, type: 3}
+  damage: {fileID: 8300000, guid: 7bf64de664e5188479da58e2ca12af11, type: 3}
 --- !u!143 &323980937510910684
 CharacterController:
   m_ObjectHideFlags: 0

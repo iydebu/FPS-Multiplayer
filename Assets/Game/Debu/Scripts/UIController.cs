@@ -3,10 +3,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class UIController : MonoBehaviourPunCallbacks
 {
     public static UIController Instance;
+
+
+    [Header("Stats")]
+    [SerializeField] private TMP_Text killsText;
+    [SerializeField] private TMP_Text deathsText;
 
     [Header("Slider")]
     [SerializeField] private Slider heatSlide;
@@ -39,6 +45,16 @@ public class UIController : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject loadingPanel;
 
+    [Header("LeaderBoard")]
+    public GameObject leaderboardPanel;
+    public Leaderboard leaderboardPlayerDisplay;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource speaker;
+    [SerializeField] private AudioClip click;
+    [SerializeField] private AudioClip leave;
+
+
     [Header("Other")]
     [SerializeField] private TMP_Text loadingText;
     [SerializeField] private TMP_InputField senstivity;
@@ -52,6 +68,7 @@ public class UIController : MonoBehaviourPunCallbacks
     public bool isOverheated;
     private Color lerpedColor;
     private int senstivityValue;
+    private Coroutine co;
 
     private void Awake()
     {
@@ -163,11 +180,9 @@ public class UIController : MonoBehaviourPunCallbacks
 
     public void LeaveRoom()
     {
-        if (PhotonNetwork.InRoom)
+        if (co == null)
         {
-            loadingText.text = "Leaving Room...";
-            loadingPanel.SetActive(true);
-            PhotonNetwork.LeaveRoom();
+          co =  StartCoroutine(Leave());
         }
     }
 
@@ -191,4 +206,30 @@ public class UIController : MonoBehaviourPunCallbacks
         return senstivityValue;
     }
 
+    public void SetKills(int kills)
+    {
+        killsText.text = "Kills: " + kills.ToString();
+    }
+
+    public void SetDeaths(int deaths)
+    {
+        deathsText.text = "Deaths: " + deaths.ToString();
+    }
+
+    public void PlayClick()
+    {
+        speaker.PlayOneShot(click);
+    }
+
+    IEnumerator Leave()
+    {
+        speaker.PlayOneShot(leave);
+        yield return new WaitForSeconds(2f);
+        if (PhotonNetwork.InRoom)
+        {
+            loadingText.text = "Leaving Room...";
+            loadingPanel.SetActive(true);
+            PhotonNetwork.LeaveRoom();
+        }
+    }
 }

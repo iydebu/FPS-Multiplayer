@@ -41,6 +41,15 @@ public class PlayerController : MonoBehaviourPunCallbacks
     [SerializeField] private Transform modelGunPoint, gunHolder;
     [SerializeField] private PhotonVoiceView recorder;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource speaker;
+    [SerializeField] private AudioClip[] gunfires;
+    [SerializeField] private AudioClip[] reloads;
+    [SerializeField] private AudioClip gunChange;
+    [SerializeField] private AudioClip pause;
+    [SerializeField] private AudioClip voice;
+    [SerializeField] private AudioClip damage;
+
 
 
     // Local Variables
@@ -56,6 +65,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private int currentHealth;
     private bool isMute;
     private bool isPaused;
+    private bool isLeaderBoardOpen;
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +74,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         Cursor.lockState = CursorLockMode.Locked;
         activeSpeed = moveSpeed;
         Camera = Camera.main;
+        speaker = Camera.gameObject.GetComponent<AudioSource>();
         recorder = GetComponent<PhotonVoiceView>();
 
         // Intilization of variables
@@ -77,6 +88,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         currentHealth = maxHealth;
         isMute = false;
         isPaused = false;
+        isLeaderBoardOpen = false;
 
         //UI
         if (photonView.IsMine)
@@ -84,6 +96,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             UIController.Instance.maxHeat = maxHeat;
             UIController.Instance.UpdateHealthUI(currentHealth);
             playerModel.SetActive(false);
+            
         }
         else
         {
@@ -105,7 +118,6 @@ public class PlayerController : MonoBehaviourPunCallbacks
             // Pause
             if (!isPaused)
             {
-
                 // Look around
                 HandleLookAround();
 
@@ -115,11 +127,17 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 // Jump
                 HandleJump();
 
-                // Shooting
-                HandleShooting();
+                if (!isLeaderBoardOpen)
+                {
+                    // Shooting
+                    HandleShooting();
+                }
 
-                // Switching guns
-                HandleSwitchingGuns();
+                if (!isOverheated)
+                {
+                    // Switching guns
+                    HandleSwitchingGuns();
+                }
 
                 //Voice
                 HandleVoice();
@@ -142,6 +160,23 @@ public class PlayerController : MonoBehaviourPunCallbacks
             // Animation
             HandleAnimation();
 
+            // LeaderBoard
+            HandleLeaderBoard();
+        }
+    }
+
+    //function to handle leaderboard
+    void HandleLeaderBoard()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            isLeaderBoardOpen = true;
+            MatchManager.instance.ShowLeaderboard();
+        }
+        else if (Input.GetKeyUp(KeyCode.Tab))
+        {
+            isLeaderBoardOpen = false;
+            MatchManager.instance.HideLeaderBoard();
         }
     }
 
@@ -159,6 +194,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
         if ((recorder!=null) && Input.GetKeyDown(KeyCode.V) && !isMute)
         {
+            speaker.PlayOneShot(voice);
             recorder.RecorderInUse.TransmitEnabled = false;
             isMute = true;
             Debug.Log("Voice Disabled");
@@ -166,6 +202,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
         else if((recorder != null) && Input.GetKeyDown(KeyCode.V) && isMute)
         {
+            speaker.PlayOneShot(voice);
             recorder.RecorderInUse.TransmitEnabled = true;
             isMute = false;
             Debug.Log("Voice Enable");
@@ -184,6 +221,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            speaker.PlayOneShot(gunChange);
             currentGunIndex++;
             if (currentGunIndex >= guns.Length)
             {
@@ -192,6 +230,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         }
         else if (Input.GetKeyDown(KeyCode.Q))
         {
+            speaker.PlayOneShot(gunChange);
             currentGunIndex--;
             if (currentGunIndex < 0)
             {
@@ -240,6 +279,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
             if (heatTime >= maxHeat)
             {
+                speaker.PlayOneShot(reloads[currentGunIndex]);
                 heatTime = maxHeat;
                 isOverheated = true;
                 UIController.Instance.isOverheated = true;
@@ -319,21 +359,24 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
+            speaker.PlayOneShot(pause);
             Cursor.lockState = CursorLockMode.None;
             isPaused = true;
             UIController.Instance.ShowPauseMenu();
         }
         else if(Input.GetKeyDown(KeyCode.Escape) && isPaused)
         {
+            speaker.PlayOneShot(pause);
+            Cursor.lockState = CursorLockMode.Locked;
             isPaused = false;
             UIController.Instance.HidePauseMenu();
-            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
 
     void Shoot()
     {
+        speaker.PlayOneShot(gunfires[currentGunIndex]);
         Ray ray = Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
@@ -343,7 +386,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
                 Debug.Log("Hit: " + hit.collider.gameObject.GetPhotonView().Owner.NickName);
                 PhotonNetwork.Instantiate(bloodEffect.name, hit.point, Quaternion.identity);
 
-                hit.collider.gameObject.GetPhotonView().RPC("DealDamage", RpcTarget.All, photonView.Owner.NickName, guns[currentGunIndex].damage);
+                hit.collider.gameObject.GetPhotonView().RPC("DealDamage", RpcTarget.All, photonView.Owner.NickName, guns[currentGunIndex].damage, PhotonNetwork.LocalPlayer.ActorNumber);
             }
             else if (!(hit.collider.gameObject.tag == "invisible"))
             {
@@ -359,21 +402,23 @@ public class PlayerController : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    public void DealDamage(string damager, int damageAmount)
+    public void DealDamage(string damager, int damageAmount, int id)
     {
-        TakeDamage(damager,damageAmount);
+        TakeDamage(damager,damageAmount, id);
     }
 
-    public void TakeDamage(string damager, int damageAmount)
+    public void TakeDamage(string damager, int damageAmount, int id)
     {
         //Debug.Log(photonView.Owner.NickName + "has been killed by " + damager);
         if (photonView.IsMine)
         {
             currentHealth -= damageAmount;
+            speaker.PlayOneShot(damage);
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
                 PlayerSpawner.Instance.Die(damager);
+                MatchManager.instance.UpdateStatsSent(id, 0, 1);
             }
             UIController.Instance.UpdateHealthUI(currentHealth);
         }
@@ -390,7 +435,11 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     void UpdateSensitivity()
     {
-        mouseSensitivity = UIController.Instance.GetSenstivity();
+        float value = UIController.Instance.GetSenstivity();
+        if(value > 0)
+        {
+            mouseSensitivity = value;
+        }
     }
     void SwitchGuns()
     {

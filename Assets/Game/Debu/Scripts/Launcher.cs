@@ -31,6 +31,15 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField] private Button startGameButton;
     [SerializeField] private Button quickJoinButton;
 
+    //Audio Manger
+    [Header("Audio")]
+    [SerializeField] private AudioSource speaker;
+    [SerializeField] private AudioClip Click;
+    [SerializeField] private AudioClip Join;
+    [SerializeField] private AudioClip Launch;
+    [SerializeField] private AudioClip Leave;
+
+
     // Other Variables
     [Header("Other")]
     [SerializeField] private RoomButtons theroomButton;
@@ -41,6 +50,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     // Local Variables
     private List<RoomButtons> roombuttonlist = new List<RoomButtons>();
     private List<PlayerInfo> playerlist = new List<PlayerInfo>();
+    private Coroutine co;
 
     private void Awake()
     {
@@ -256,7 +266,10 @@ quickJoinButton.gameObject.SetActive(false);
     public void StartGame()
     {
         // Called when the start game button is clicked
-        PhotonNetwork.LoadLevel(gameSceneName);
+        if (co == null)
+        {
+            co = StartCoroutine(startGame());
+        }
     }
 
     public void QuickJoin()
@@ -303,5 +316,24 @@ quickJoinButton.gameObject.SetActive(false);
         findRoomPanel.SetActive(false);
     }
 
+    public void ClickSound()
+    {
+        speaker.PlayOneShot(Click);
+    }
 
+    public void JoinSound()
+    {
+        speaker.PlayOneShot(Join);
+    }
+
+    public void LeaveSound()
+    {
+        speaker.PlayOneShot(Leave);
+    }
+    IEnumerator startGame()
+    {
+        speaker.PlayOneShot(Launch);
+        yield return new WaitForSeconds(2);
+        PhotonNetwork.LoadLevel(gameSceneName);
+    }
 }
